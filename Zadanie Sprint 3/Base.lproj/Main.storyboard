@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZI-Mf-lQ6">
-                                <rect key="frame" x="104.99999999999999" y="402" width="180.66666666666663" height="54.666666666666686"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZI-Mf-lQ6">
+                                <rect key="frame" x="104.99999999999999" y="421.66666666666669" width="180.66666666666663" height="54.666666666666686"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="CLICK ME">
                                     <backgroundConfiguration key="background">
@@ -32,14 +32,14 @@
                                     <action selector="buttonOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="avn-Wr-Pa4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="200" verticalHuggingPriority="40" ambiguous="YES" text="Значение счётчика: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="178" translatesAutoresizingMaskIntoConstraints="NO" id="pNi-m0-9vM">
-                                <rect key="frame" x="79.999999999999986" y="139" width="215.66666666666663" height="26.333333333333343"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="200" verticalHuggingPriority="40" text="Значение счётчика: 0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="178" translatesAutoresizingMaskIntoConstraints="NO" id="pNi-m0-9vM">
+                                <rect key="frame" x="60" y="139" width="317" height="52.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fte-a9-eub">
-                                <rect key="frame" x="104" y="472.66666666666669" width="86" height="61.000000000000057"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fte-a9-eub">
+                                <rect key="frame" x="104" y="483.66666666666669" width="86" height="60.666666666666686"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="+">
                                     <backgroundConfiguration key="background">
@@ -48,9 +48,16 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="39"/>
                                     <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonPlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qil-PT-HE9"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEk-Lo-vda">
-                                <rect key="frame" x="196" y="472.66666666666669" width="90" height="61.000000000000057"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEk-Lo-vda">
+                                <rect key="frame" x="196" y="483.66666666666674" width="90" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="IRa-Dj-bz8"/>
+                                    <constraint firstAttribute="height" constant="63" id="bsW-85-TdZ"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="-">
                                     <backgroundConfiguration key="background">
@@ -59,9 +66,12 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="39"/>
                                     <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m4y-92-91f"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUV-sD-OJL">
-                                <rect key="frame" x="104" y="540" width="182" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUV-sD-OJL">
+                                <rect key="frame" x="104" y="554" width="182" height="35"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal">
                                     <imageReference key="image" image="eraser" catalog="system" symbolScale="large"/>
@@ -69,25 +79,28 @@
                                 <buttonConfiguration key="configuration" style="gray">
                                     <imageReference key="image" image="eraser" catalog="system" symbolScale="large"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonEraser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uut-EE-IHP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="eUV-sD-OJL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="3QT-GZ-xeQ"/>
-                            <constraint firstItem="GEk-Lo-vda" firstAttribute="leading" secondItem="fte-a9-eub" secondAttribute="trailing" constant="16" id="8bH-vD-ksU"/>
-                            <constraint firstItem="pNi-m0-9vM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="D6P-H8-cyp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eUV-sD-OJL" secondAttribute="trailing" constant="107" id="EIQ-ur-8Lo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eUV-sD-OJL" secondAttribute="bottom" constant="243" id="Gdc-ry-mBH"/>
-                            <constraint firstItem="eUV-sD-OJL" firstAttribute="top" secondItem="fte-a9-eub" secondAttribute="bottom" constant="16" id="Rng-zd-qdv"/>
-                            <constraint firstItem="GEk-Lo-vda" firstAttribute="leading" secondItem="fte-a9-eub" secondAttribute="trailing" constant="16" id="Rxz-vr-tRU"/>
-                            <constraint firstItem="GEk-Lo-vda" firstAttribute="leading" secondItem="fte-a9-eub" secondAttribute="trailing" constant="6" id="dj7-xg-rf4"/>
-                            <constraint firstItem="sZI-Mf-lQ6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="drJ-Js-zLS"/>
-                            <constraint firstItem="fte-a9-eub" firstAttribute="top" secondItem="sZI-Mf-lQ6" secondAttribute="bottom" constant="16" id="fSm-vT-jFT"/>
-                            <constraint firstItem="GEk-Lo-vda" firstAttribute="top" secondItem="sZI-Mf-lQ6" secondAttribute="bottom" constant="16" id="lei-rN-QWY"/>
-                            <constraint firstItem="sZI-Mf-lQ6" firstAttribute="top" secondItem="pNi-m0-9vM" secondAttribute="bottom" constant="236.66999999999999" id="m8t-y3-aMO"/>
-                            <constraint firstItem="pNi-m0-9vM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="qry-8i-eM3"/>
-                            <constraint firstItem="GEk-Lo-vda" firstAttribute="top" secondItem="sZI-Mf-lQ6" secondAttribute="bottom" constant="16" id="ydb-mD-4si"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pNi-m0-9vM" secondAttribute="trailing" constant="16" id="0AB-qe-2V5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sZI-Mf-lQ6" secondAttribute="trailing" constant="107.33" id="94E-7R-Uiy"/>
+                            <constraint firstItem="pNi-m0-9vM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="EU7-qV-1iT"/>
+                            <constraint firstItem="fte-a9-eub" firstAttribute="top" secondItem="sZI-Mf-lQ6" secondAttribute="bottom" constant="7.3300000000000001" id="PJe-g1-Ulm"/>
+                            <constraint firstItem="sZI-Mf-lQ6" firstAttribute="top" secondItem="pNi-m0-9vM" secondAttribute="bottom" constant="230" id="QOv-wW-WdP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GEk-Lo-vda" secondAttribute="trailing" constant="107" id="Z5d-6h-3q7"/>
+                            <constraint firstItem="eUV-sD-OJL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="gdk-ya-4rH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eUV-sD-OJL" secondAttribute="trailing" constant="107" id="kxr-WS-Qww"/>
+                            <constraint firstItem="sZI-Mf-lQ6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="lZS-3E-RxE"/>
+                            <constraint firstItem="eUV-sD-OJL" firstAttribute="top" secondItem="GEk-Lo-vda" secondAttribute="bottom" constant="7.3300000000000001" id="obP-pa-LOV"/>
+                            <constraint firstItem="fte-a9-eub" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="quN-Rc-GhK"/>
+                            <constraint firstItem="pNi-m0-9vM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="sjF-lM-nQU"/>
+                            <constraint firstItem="GEk-Lo-vda" firstAttribute="top" secondItem="sZI-Mf-lQ6" secondAttribute="bottom" constant="7.3300000000000001" id="uj6-u6-x4n"/>
+                            <constraint firstItem="GEk-Lo-vda" firstAttribute="leading" secondItem="fte-a9-eub" secondAttribute="trailing" constant="6" id="w7v-h0-iDN"/>
                         </constraints>
                     </view>
                     <connections>

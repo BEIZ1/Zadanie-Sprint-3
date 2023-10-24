@@ -13,6 +13,22 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Counter: UILabel!
     
+    @IBAction func buttonEraser(_ sender: Any) {
+        clicks = 0
+        Counter.text = "Значение счетчика: \(clicks)"
+    }
+    @IBAction func buttonMinus(_ sender: Any) {
+        if clicks > 0{
+            clicks -= 1
+            Counter.text = "Значение счетчика: \(clicks)"
+        }else{
+            Counter.text = "Ошибка: Значение счетчика не может быть меньше \(clicks)"
+        }
+    }
+    @IBAction func buttonPlus(_ sender: Any) {
+        clicks += 1
+        Counter.text = "Значение счетчика: \(clicks)"
+    }
     @IBAction func buttonOnClick(_ sender: Any) {
         clicks += 1
         Counter.text = "Значение счетчика: \(clicks)"
